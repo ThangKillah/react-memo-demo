@@ -11,7 +11,9 @@ const Test = ({ name, count }) => {
     <>
       <h1>ID: {id}</h1>
       <h1>Count: {count}</h1>
-      <button onClick={() => setId(Math.random())}>Decrement</button>
+      <button onClick={() => setId(Math.floor(Math.random() * 10))}>
+        Random number
+      </button>
     </>
   );
 };
